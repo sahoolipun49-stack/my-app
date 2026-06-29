@@ -1,43 +1,285 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lipun Developer Portfolio-Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+      body {
+        background-color: rgb(10, 10, 50);
+        color: white;
+        font-family: "Lexend Deca", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(24, 24, 75);
+        height: 70px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(95, 95, 214);
+      }
+      main hr {
+        margin: 60px 84px;
+        border: 0;
+        background: rgb(117, 117, 199);
+        height: 1.2px;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        width: 1px;
+        height: 93px;
+        background-color: white;
+        margin: 0 110px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 2.6rem;
+      }
+      .leftSection .buttons {
+        margin: 30px 0;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background: rgb(84, 42, 201);
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .rightSection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(84, 42, 201);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(84, 42, 201);
+      }
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+        
+      }
+      .vertical-title {
+        width: 150px;
+        position: relative;
+        top: 75px;
+        
+      }
+      .vertical-desc {
+        position: relative;
+        top: 82px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+      footer{
+        background-color: rgb(25, 24, 69);
+        height: 233px;
+      }
+      .footer{
+        display:flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul{
+        list-style: none;
+      }
+      .footer > div{
+        width: 233px;
+      }
+      footer .footer-rights{
+        text-align: center;
+        color: gray;
+      }
+    </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header>
+      <nav>
+        <div class="left">Lipun's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Lipun</span>
+          <div>and i am a Passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Visit GitHub</button>
+            <button class="btn">Download CV</button>    
+          </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="background image" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What i have done so far</span>
+        <h1>Work Experiences</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="HTMLlogo.png" alt="" />
+            <div class="vertical-title">HTML Developer (2021 - 2022)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quod.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="CSSlogo.png" alt="" />
+            <div class="vertical-title">CSS Developer (2022 - 2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quod.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="JavaScript-logo.png" alt="" />
+            <div class="vertical-title">JavaScript Developer (2023 - 2024)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quod.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="Reactlogo.png" alt="" />
+            <div class="vertical-title">React Developer (2024 - 2025)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quod.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="Figmalogo.png" alt="" />
+            <div class="vertical-title">Figma Developer (2025 - 2026)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quod.
+            </div>
+          </div>
+        
+        </div>
+      </section>
+    </main>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+<footer>
+  <div class="footer">
+      <div class="footer-first">
+        <h3>Lipun's Developer Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>   
+        </ul>
+          
+
+      </div>
+      <div class="footer-third">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>   
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>   
+        </ul>  
+      </div>
+</div>
+<div class="footer-rights">
+  <p>Copyright &copy; 2026 www.codewithlipun.online | All rights reserved.</p>
+</div>
+
+</footer>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Graphic Designer",
+          "Freelancer",
+          "Web Designer",
+        ],
+        loop: true,
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
